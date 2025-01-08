@@ -1,0 +1,35 @@
+﻿/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: url('images/hero.png') no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+}
+
+.services-section .service-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+    .services-section .service-item:hover {
+        transform: translateY(-10px);
+    }
+
+.about-section img {
+    border-radius: 10px;
+}
+
+.contact-section .map-container {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+}
