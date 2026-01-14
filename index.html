@@ -3,250 +3,626 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>G.A. Security System</title>
+    <title>G.A. Security System | Advanced Protection Solutions</title>
+    
+    <!-- Google Fonts - Premium Selection -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="StyleSheet.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">G.A. Security System</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#services">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#clientele">Clientele</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="main-nav">
+            <div class="nav-container">
+                <a href="#" class="logo">
+                    <div class="logo-icon">
+                        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 2L4 10V18C4 28.5 10.8 38.2 20 40C29.2 38.2 36 28.5 36 18V10L20 2Z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                            <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">G.A. Security</span>
+                </a>
+                
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#clients" class="nav-link">Clients</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
+                
+                <a href="#contact" class="nav-cta">Get Started</a>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero-section">
-        <img src="images/hero.jpg" alt="Hero Image" class="img-fluid">
-        <div class="container text-center">
-            <div style="margin-top:20px;">
-                <h1>Your Trusted Partner in Security Solutions</h1>
-            </div>
-            <p class="lead">Comprehensive electronic security and smart home automation solutions.</p>
-            <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
         </div>
-
+        
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-tag">
+                    <span class="tag-dot"></span>
+                    <span class="tag-text">Trusted Since 2011</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Protect What
+                    <span class="title-accent">Matters Most</span>
+                </h1>
+                
+                <p class="hero-text">
+                    Premium electronic security and smart home automation 
+                    solutions. We deliver cutting-edge technology with 
+                    uncompromising quality and dedicated service.
+                </p>
+                
+                <div class="hero-actions">
+                    <a href="#services" class="btn-primary">
+                        <span>Our Services</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-secondary">
+                        <span>Contact Us</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-right">
+                <div class="hero-card">
+                    <div class="stat-grid">
+                        <div class="stat-box">
+                            <span class="stat-num">13+</span>
+                            <span class="stat-label">Years of Trust</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">500+</span>
+                            <span class="stat-label">Projects Done</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">100+</span>
+                            <span class="stat-label">Happy Clients</span>
+                        </div>
+                        <div class="stat-box">
+                            <span class="stat-num">14</span>
+                            <span class="stat-label">Districts Covered</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-hint">
+            <span>Scroll to explore</span>
+            <div class="scroll-icon">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="services-section py-5">
+    <section id="services" class="services">
         <div class="container">
-            <h2 class="text-center mb-5">Our Services</h2>
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <div class="service-item p-4">
-                        <img src="images/Services_CCTV.png" alt="IP Video Surveillance" class="img-fluid mb-3">
-                        <h3>IP Video Surveillance</h3>
-                        <p>Advanced surveillance systems to monitor and secure your premises.</p>
+            <header class="section-header">
+                <span class="section-label">Our Expertise</span>
+                <h2 class="section-title">Security Solutions</h2>
+                <p class="section-desc">
+                    Comprehensive protection systems tailored for homes and businesses
+                </p>
+            </header>
+            
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-video"></i>
                     </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="service-item p-4">
-                        <img src="images/Services_Home_Automation.png" alt="Smart Home Automation" class="img-fluid mb-3">
-                        <h3>Smart Home Automation</h3>
-                        <p>Control and monitor your home remotely for convenience and energy efficiency.</p>
+                    <span class="service-num">01</span>
+                    <h3 class="service-title">IP Video Surveillance</h3>
+                    <p class="service-desc">
+                        High-definition IP cameras with remote monitoring, 
+                        night vision, and cloud storage capabilities.
+                    </p>
+                    <ul class="service-tags">
+                        <li>4K Resolution</li>
+                        <li>Night Vision</li>
+                        <li>Remote Access</li>
+                    </ul>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
                     </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="service-item p-4">
-                        <img src="images/Services_Solar.png" alt="Solar Solutions" class="img-fluid mb-3">
-                        <h3>Solar Solutions</h3>
-                        <p>Eco-friendly solar panels and energy solutions for your home or business.</p>
+                    <span class="service-num">02</span>
+                    <h3 class="service-title">Smart Home Automation</h3>
+                    <p class="service-desc">
+                        Intelligent automation for lighting, climate control, 
+                        and security—all from your smartphone.
+                    </p>
+                    <ul class="service-tags">
+                        <li>Voice Control</li>
+                        <li>App Integration</li>
+                        <li>Energy Saving</li>
+                    </ul>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-solar-panel"></i>
                     </div>
-                </div>
+                    <span class="service-num">03</span>
+                    <h3 class="service-title">Solar Solutions</h3>
+                    <p class="service-desc">
+                        Sustainable energy solutions with premium solar panels 
+                        for residential and commercial properties.
+                    </p>
+                    <ul class="service-tags">
+                        <li>Grid-Tied</li>
+                        <li>Off-Grid</li>
+                        <li>Hybrid</li>
+                    </ul>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fire"></i>
+                    </div>
+                    <span class="service-num">04</span>
+                    <h3 class="service-title">Fire Alarm Systems</h3>
+                    <p class="service-desc">
+                        Advanced fire detection with smoke sensors, heat 
+                        detectors, and instant alert notifications.
+                    </p>
+                    <ul class="service-tags">
+                        <li>Smoke Detection</li>
+                        <li>Heat Sensors</li>
+                        <li>Auto Alert</li>
+                    </ul>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <span class="service-num">05</span>
+                    <h3 class="service-title">Access Control</h3>
+                    <p class="service-desc">
+                        Biometric and RFID-based access management for 
+                        secure entry and attendance tracking.
+                    </p>
+                    <ul class="service-tags">
+                        <li>Biometric</li>
+                        <li>RFID Cards</li>
+                        <li>Time Tracking</li>
+                    </ul>
+                </article>
+                
+                <article class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <span class="service-num">06</span>
+                    <h3 class="service-title">Intrusion Alarm</h3>
+                    <p class="service-desc">
+                        Comprehensive intrusion detection with motion sensors 
+                        and 24/7 monitoring capabilities.
+                    </p>
+                    <ul class="service-tags">
+                        <li>Motion Sensors</li>
+                        <li>24/7 Monitoring</li>
+                        <li>Mobile Alerts</li>
+                    </ul>
+                </article>
             </div>
+        </div>
+    </section>
 
-
-            <div class="row" style="margin-top:20px;">
-                <div class="col-md-4 text-center">
-                    <div class="service-item p-4">
-                        <img src="images/Fire_Alarm_System.png" alt="Fire Alarm" class="img-fluid mb-3">
-                        <h3>Fire Alarm System</h3>
-                        <p>Advanced fire detection and alarm systems designed to protect lives and property.</p>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-visual">
+                    <div class="visual-frame">
+                        <div class="visual-content">
+                            <div class="shield-icon">
+                                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M40 4L8 20V36C8 57 22.4 76.4 40 80C57.6 76.4 72 57 72 36V20L40 4Z" stroke="currentColor" stroke-width="3" fill="none"/>
+                                    <path d="M28 40L36 48L52 32" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <span class="visual-text">Trusted Protection</span>
+                        </div>
+                    </div>
+                    <div class="experience-box">
+                        <span class="exp-years">13+</span>
+                        <span class="exp-label">Years of Excellence</span>
                     </div>
                 </div>
-                <div class="col-md-4 text-center">
-                    <div class="service-item p-4">
-                        <img src="images/Access_Control.png" alt="Access Control" class="img-fluid mb-3">
-                        <h3>Access Control System</h3>
-                        <p>Secure and efficient access management solutions that allow you to control who enters your premises.</p>
+                
+                <div class="about-content">
+                    <span class="section-label">About Us</span>
+                    <h2 class="section-title">Your Security Partner Since 2011</h2>
+                    
+                    <div class="about-text">
+                        <p class="lead">
+                            G.A. Security System is a leading provider of electronic 
+                            security and smart home automation solutions in Uttar Pradesh.
+                        </p>
+                        <p>
+                            We understand that safety and security are paramount in today's 
+                            world. Our dedicated team delivers cutting-edge solutions that 
+                            safeguard your property and provide complete peace of mind. 
+                            Whether securing a small business, large enterprise, or smart 
+                            home, we tailor our services to meet your unique needs.
+                        </p>
                     </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <div class="service-item p-4">
-                        <img src="images/Intrusion_Alarm.png" alt="Intrusion Alarm System" class="img-fluid mb-3">
-                        <h3>Intrusion Alarm System</h3>
-                        <p>Intrusion detection systems that safeguard your property against unauthorized access.</p>
+                    
+                    <div class="mission-block">
+                        <div class="mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <div class="mission-text">
+                            <h4>Our Mission</h4>
+                            <p>
+                                To empower individuals and businesses with innovative, 
+                                reliable, and cost-effective security solutions.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="features-list">
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Certified Professionals</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>24/7 Support</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Custom Solutions</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check"></i>
+                            <span>Quality Guarantee</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Us Section -->
-    <section id="about" class="about-section py-5 bg-light">
+    <!-- Clients Section -->
+    <section id="clients" class="clients">
         <div class="container">
-            <h2 class="text-center mb-5">About Us</h2>
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="images/About_Us.png" alt="About Us" class="img-fluid">
+            <header class="section-header">
+                <span class="section-label">Our Portfolio</span>
+                <h2 class="section-title">Trusted Partners</h2>
+                <p class="section-desc">
+                    Proudly serving leading businesses across industries
+                </p>
+            </header>
+            
+            <div class="clients-showcase">
+                <div class="client-column">
+                    <div class="client-item">Tariq Biryani</div>
+                    <div class="client-item">Shingar Mahal</div>
+                    <div class="client-item">Khalsa Medical Store</div>
+                    <div class="client-item">Vijay Deluxe Hotel</div>
+                    <div class="client-item">Dr. Rebelo</div>
+                    <div class="client-item">Janta Medical Store</div>
+                    <div class="client-item">Raju Jewellers</div>
+                    <div class="client-item">Calcutta Jewellers</div>
                 </div>
-                <div class="col-md-6">
-                    <h3>Who We Are</h3>
-                    <p>Established in the year 2011, G.A. Security System is a leading provider of electronic security and smart home automation solutions. We are committed to ensuring the safety and security of individuals and businesses with cutting-edge technology. We understand that safety and security are paramount in today’s fast-paced world. That’s why we are dedicated to delivering cutting-edge solutions that not only safeguard your property but also provide peace of mind. Whether it’s securing a small business, a large enterprise, or a smart home, we tailor our services to meet the unique needs of each client.</p>
-                    <h3>Our Mission</h3>
-                    <p>To deliver innovative, reliable, and cost-effective security solutions tailored to our clients' needs. We are driven by a passion for excellence and a commitment to making the world a safer place. By combining technical expertise with a customer-first mindset, we strive to set new standards in the security industry and build long-lasting relationships with our clients. Our mission is to empower individuals and businesses with innovative, reliable, and cost-effective security solutions that enhance safety, convenience, and efficiency. We believe that everyone deserves access to top-tier security systems, and we are committed to making this a reality for our clients.</p>
+                <div class="client-column">
+                    <div class="client-item">Provogue</div>
+                    <div class="client-item">Mufti</div>
+                    <div class="client-item">Flying Machine</div>
+                    <div class="client-item">Peter England</div>
+                    <div class="client-item">Fayiza Hospital</div>
+                    <div class="client-item">Shubhagi Hospital</div>
+                    <div class="client-item">Chappan Bhog Sweets</div>
+                    <div class="client-item">Yamaha Agency</div>
+                </div>
+                <div class="client-column">
+                    <div class="client-item">Harcharan Cloth House</div>
+                    <div class="client-item">City Motors</div>
+                    <div class="client-item">S.K Mobile</div>
+                    <div class="client-item">K.N.I.T</div>
+                    <div class="client-item">New Tyre House</div>
+                    <div class="client-item">Raja Furniture</div>
+                    <div class="client-item">Adarsh Footwear</div>
+                    <div class="client-item">Gandhi Aashram</div>
                 </div>
             </div>
-        </div>
-    </section>
-    <!-- About Us Section -->
-
-    <section id="clientele" class="clientele-section py-5 ">
-        <div class="container">
-            <h2 class="text-center mb-4">Our Esteemed Clients</h2>
-            <div class="row">
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">Tariq Biryani</li>
-                        <li class="list-group-item">Sudhir Kumar Srivastav</li>
-                        <li class="list-group-item">Shingar Mahal</li>
-                        <li class="list-group-item">Khalsa Medical Store</li>
-                        <li class="list-group-item">Vijay Deluxe Hotel</li>
-                        <li class="list-group-item">Dr. Rebelo</li>
-                        <li class="list-group-item">Janta Medical Store</li>
-                        <li class="list-group-item">Harcharan Cloth House</li>
-                        <li class="list-group-item">Hasnaeen Biryani</li>
-                        <li class="list-group-item">City Motors</li>
-                        <li class="list-group-item">S.K Mobile</li>
-                        <li class="list-group-item">Raju Jewellers</li>
-                        <li class="list-group-item">K.N.I.T</li>
-                        <li class="list-group-item">Nomero Uno</li>
-                        <li class="list-group-item">Calcutta Jewellers</li>
-                        <li class="list-group-item">New Tyre House</li>
-                    </ul>
+            
+            <div class="bank-feature">
+                <div class="bank-badge">
+                    <i class="fas fa-university"></i>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">Provouge</li>
-                        <li class="list-group-item">Mufti</li>
-                        <li class="list-group-item">Flying Machine</li>
-                        <li class="list-group-item">Peter England</li>
-                        <li class="list-group-item">Raja Furniture</li>
-                        <li class="list-group-item">Fayiza Hospital</li>
-                        <li class="list-group-item">Shubhagi Hospital</li>
-                        <li class="list-group-item">Dr. Amit</li>
-                        <li class="list-group-item">S.T Builders</li>
-                        <li class="list-group-item">Hamdard Dawakhana</li>
-                        <li class="list-group-item">Chappan Bhog Sweets</li>
-                        <li class="list-group-item">Adarsh Footwear</li>
-                        <li class="list-group-item">Yamaha Agency</li>
-                        <li class="list-group-item">Gandhi Aashram</li>
-                        <li class="list-group-item">Vinod Trading Company</li>
-                        <li class="list-group-item">Naaz Chudi Centre</li>
-                    </ul>
+                <div class="bank-info">
+                    <h3>Baroda Uttar Pradesh Gramin Bank</h3>
+                    <p>All Branches Across 14 Districts</p>
                 </div>
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <ul class="list-group">
-                        <li class="list-group-item">B.S.A Office</li>
-                        <li class="list-group-item">Vicky Jewellers</li>
-                        <li class="list-group-item">Baroda Uttar Pradesh Gramin Bank (All Branches):</li>
-                        <ul class="ps-3">
-                            <li>Allahabad</li>
-                            <li>Ambedkar Nagar</li>
-                            <li>Amethi</li>
-                            <li>Bareilly</li>
-                            <li>Faizabad</li>
-                            <li>Fatehpur</li>
-                            <li>Kanpur Dehat</li>
-                            <li>Kanpur Nagar</li>
-                            <li>Kaushambi</li>
-                            <li>Pilibhit</li>
-                            <li>Pratapgarh</li>
-                            <li>Raebareli</li>
-                            <li>Shahjahanpur</li>
-                            <li>Sultanpur</li>
-                        </ul>
-                    </ul>
+                <div class="bank-locations">
+                    <span>Allahabad</span>
+                    <span>Ambedkar Nagar</span>
+                    <span>Amethi</span>
+                    <span>Bareilly</span>
+                    <span>Faizabad</span>
+                    <span>Fatehpur</span>
+                    <span>Kanpur Dehat</span>
+                    <span>Kanpur Nagar</span>
+                    <span>Kaushambi</span>
+                    <span>Pilibhit</span>
+                    <span>Pratapgarh</span>
+                    <span>Raebareli</span>
+                    <span>Shahjahanpur</span>
+                    <span>Sultanpur</span>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-
-    <section id="contact" class="contact-section ">
-        <div class="header">
-
-            <button class="btn-contact">Contact Us</button>
-        </div>
-
-        <div class="contact-container">
-            <div class="contact-info">
-                <ul>
-                    <li><i class="fas fa-phone-alt"></i><span>+91-9335577766, +91-9670654000</span></li>
-                    <li><i class="fas fa-envelope"></i><span>info@gasecuritysystem.in</span></li>
-                    <li><i class="fas fa-map-marker-alt"></i><span>Nasreen Fatima Villa, Sirwara Road, Sultanpur - 228001</span></li>
-                </ul>
-                <div>
-                    <img src="images/GA.png" alt="About Us" class="img-fluid">
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <span class="section-label light">Get In Touch</span>
+                    <h2 class="section-title light">Let's Discuss Your Security Needs</h2>
+                    <p class="contact-desc">
+                        Ready to protect your premises? Our team is here to help 
+                        you find the perfect security solution.
+                    </p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Phone</span>
+                                <a href="tel:+919335577766">+91-9335577766</a>
+                                <a href="tel:+919670654000">+91-9670654000</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Email</span>
+                                <a href="mailto:info@gasecuritysystem.in">info@gasecuritysystem.in</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <span class="label">Address</span>
+                                <span>Nasreen Fatima Villa, Sirwara Road, Sultanpur - 228001</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-row">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrap">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send a Message</h3>
+                        
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <input type="text" id="name" name="name" placeholder=" " required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            
+                            <div class="form-field">
+                                <input type="email" id="email" name="email" placeholder=" " required>
+                                <label for="email">Email Address</label>
+                            </div>
+                            
+                            <div class="form-field">
+                                <input type="tel" id="phone" name="phone" placeholder=" " required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            
+                            <div class="form-field">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected></option>
+                                    <option value="cctv">IP Video Surveillance</option>
+                                    <option value="automation">Smart Home Automation</option>
+                                    <option value="solar">Solar Solutions</option>
+                                    <option value="fire">Fire Alarm System</option>
+                                    <option value="access">Access Control</option>
+                                    <option value="intrusion">Intrusion Alarm</option>
+                                </select>
+                                <label for="service">Service Required</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-field full">
+                            <textarea id="message" name="message" rows="4" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </form>
                 </div>
             </div>
-
-            <div class="contact-form">
-                <h3>Send Message</h3>
-                <form>
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Email Address" required>
-                    <input type="text" name="phone" placeholder="Phone Number" required>
-                    <input type="text" name="subject" placeholder="Subject" required>
-                    <textarea name="message" rows="5" placeholder="Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
+            
+            <div class="map-section">
+                <div class="map-label">
+                    <i class="fas fa-location-dot"></i>
+                    <span>Our Location</span>
+                </div>
+                <div class="map-frame">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1741320.3780543653!2d79.64984893798831!3d26.25985977019411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a7d26a29ba2e5%3A0x94d6d2293291be4!2sNasreen%20Fatima%20villa!5e1!3m2!1sen!2sin!4v1736497857010!5m2!1sen!2sin" 
+                        loading="lazy" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
             </div>
         </div>
-        <div class="map-container">
-            <h2>Find Us on Google Maps</h2>
-            <p>
-                We would love to hear from you! Whether you have questions about our services, need assistance, or simply want to share your feedback, feel free to reach out. Our team is dedicated to providing prompt and reliable support to ensure your experience with us is seamless. Visit us at our location, give us a call, or drop us an email, and we will get back to you as soon as possible. Your satisfaction is our priority, and we’re here to help in every way we can.
-            </p>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1741320.3780543653!2d79.64984893798831!3d26.25985977019411!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399a7d26a29ba2e5%3A0x94d6d2293291be4!2sNasreen%20Fatima%20villa!5e1!3m2!1sen!2sin!4v1736497857010!5m2!1sen!2sin" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
     </section>
-    <!-- Contact Section -->
+
     <!-- Footer -->
-    <footer class="bg-dark text-white text-center py-3">
+    <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2023 G.A. Security System. All rights reserved.</p>
+            <div class="footer-main">
+                <div class="footer-brand">
+                    <a href="#" class="footer-logo">
+                        <div class="logo-icon">
+                            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 2L4 10V18C4 28.5 10.8 38.2 20 40C29.2 38.2 36 28.5 36 18V10L20 2Z" stroke="currentColor" stroke-width="2.5" fill="none"/>
+                                <path d="M14 20L18 24L26 16" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <span>G.A. Security System</span>
+                    </a>
+                    <p>Your trusted partner in electronic security and smart home automation solutions since 2011.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#clients">Clients</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">CCTV Surveillance</a></li>
+                        <li><a href="#services">Home Automation</a></li>
+                        <li><a href="#services">Solar Solutions</a></li>
+                        <li><a href="#services">Fire Alarm</a></li>
+                        <li><a href="#services">Access Control</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91-9335577766</p>
+                    <p><i class="fas fa-envelope"></i> info@gasecuritysystem.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Sultanpur, UP - 228001</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 G.A. Security System. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Back to Top -->
+    <button class="back-top" id="backTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script>
+        // Mobile Nav Toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', () => {
+            navToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // Header Scroll
+        const header = document.querySelector('.site-header');
+        window.addEventListener('scroll', () => {
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Back to Top
+        const backTop = document.getElementById('backTop');
+        window.addEventListener('scroll', () => {
+            backTop.classList.toggle('visible', window.scrollY > 500);
+        });
+        backTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Form Submit
+        document.getElementById('contactForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you! We will contact you soon.');
+            e.target.reset();
+        });
+
+        // Scroll Animation
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .client-item, .about-content, .about-visual').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
 </body>
 </html>
